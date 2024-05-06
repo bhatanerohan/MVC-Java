@@ -179,7 +179,5 @@ save res/fallneu-horizontical-vertical.png fallhorver
 brighten 10 fallneu fallneub
 ```
 
-## Image Rights
 
-The image used for example transformations is owned by us.
 

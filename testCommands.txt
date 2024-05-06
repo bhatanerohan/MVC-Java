@@ -1,0 +1,93 @@
+#load fallneu file and call it 'fallneu'
+load C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu.jpg fallneu
+#save fallneu
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu.png fallneu
+#seperate components
+red-component fallneu fallneured
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneured.png fallneured
+green-component fallneu fallneugreen
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneugreen.ppm fallneugreen
+blue-component fallneu fallneublue
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneublue.jpg fallneublue
+#flip fallneu horizontally
+horizontal-flip fallneu fallneuhoriz
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-horizontal.png fallneuhoriz
+#flip fallneu vertically
+vertical-flip fallneu fallneuvert
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-vertical.png fallneuvert
+#flip fallneu horizontally and then vertically
+horizontal-flip fallneu fallhor
+vertical-flip fallhor fallhorver
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-horizontical-vertical.png fallhorver
+#brighten fallneu by adding 10
+brighten 10 fallneu fallneub
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-brighten.png fallneub
+#darken fallneu by reducing 10
+darken 10 fallneu fallneud
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-darken.png fallneud
+#split rgb components in fallneu
+rgb-split fallneu fallneuredsp fallneugreensp fallneubluesp
+#combine the rgb components of fallneu
+rgb-combine fallneu-comb fallneured fallneugreen fallneublue
+#blur the fallneu image
+blur fallneu fallneublur
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-blur.png fallneublur
+#sharpen fallneu image
+sharpen fallneu fallneusharpen
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-sharp.png fallneusharpen
+#set the colortone of fallneu to sepia
+sepia fallneu fallneusepia
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-sepia.png fallneusepia
+#convert fall neu to grayscale
+grayscale fallneu grayfallneu
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-gray.png grayfallneu
+#create a grayscale using only the value component, as an image fallneu-val
+value-component fallneu fallneu-val
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-val.png fallneu-val
+#create a grayscale using only the intensity component, as an image fallneu-int
+intensity-component fallneu fallneu-int
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-int.png fallneu-int
+#create a grayscale using only the luma component, as an image fallneu-luma
+luma-component fallneu fallneu-luma
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-luma.png fallneu-luma
+# color correction of image
+color-correct fallneu fallcorr
+# save
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallcorr.png fallcorr
+# plot histogram of color corrected image
+histogram fallcorr fallcorrhisto
+# save fallcorr histogram
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallcorrhisto.png fallcorrhisto
+# plot histogram of fallneu image
+histogram fallneu fallhisto
+# save original image histogram
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallhisto.png fallhisto
+# adjust levels of image
+levels-adjust 20 100 255 fallneu fallneulevel
+# save adjusted level image of fallneu
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneulevellevel.png fallneulevel
+# plot histogram of level-adjusted image
+histogram fallneulevel fallneulevelhisto
+# save
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneulevelhisto.png fallneulevelhisto
+# compress image by 20 percent
+compress 20 fallneu fallneu20comp
+# save
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-comp-20.jpg fallneu20comp
+# compress image by 60 percent
+compress 60 fallneu fallneu60comp
+# save
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneu-comp-60.jpg fallneu60comp
+# split view for sharpen
+sharpen fallneu fallneusharpensplit split 40
+# save
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneusharpensplit.jpg fallneusharpensplit
+# split view for sepia
+sepia fallneu fallneusepiasplit split 60
+# save
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneusepiasplit.jpg fallneusepiasplit
+# adjust levels of image and split
+levels-adjust 20 100 255 fallneu fallneulevel40 split 40
+# save adjusted level image of fallneu
+save C:\Users\mihir\Documents\CS5010\projects\assignment6\res\fallneulevellevelsplit.png fallneulevel40
+

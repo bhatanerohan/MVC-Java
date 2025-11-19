@@ -1,5 +1,5 @@
 # Image Processing Application README
-# Programming Design Paradigm Assignment
+# Programming Design Paradigm
 ## Overview
 
 This image processing application allows you to load, manipulate, and save images. It provides both
